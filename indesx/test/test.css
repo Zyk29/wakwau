@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* navbar start */
+.navbar{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: #080808;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navbar .logo img{
+    width: 3rem;
+}
+.navbar .navbar-nav{
+    display: flex;
+}
+
+
+.navbar .navbar-nav a{
+    display: inline-block ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: #020202;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.menu a {
+    padding-left: 30px;
+}
+
+#menu{
+    /* display: none; */
+}
+/* navbar end */
+/* home start */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/assets.femaledaily.com/images/user-review/Saff-%26-Co.--Extrait-de-Parfum--imgfdn-034cb82d-a96b-46fe-a505-ea9d018e437c-2464014-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}   
+
+.home-one{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.home-one h1{
+    font-size: 7rem;
+}
+
+.home-one p{
+    font-size: 2rem;
+}
+
+.home-one button,
+.home-one a{
+    margin-top: 1rem;
+    border: none;
+    padding: 7px 5px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.img-dua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dua h1{
+    margin-bottom: 2rem;
+}
+
+.di img{
+    padding: 20px;
+    width: 700px;
+    border-radius: 10%;
+}
+
+.deksripsi{
+    padding: 50px;
+}
+
+.visi-misi{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20rem;
+
+}
+
+.visi-misi h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.visi-misi img{
+    width: 25rem;
+    margin-right: 2rem;
+    border-radius: 200px 100px 20px 105px;
+}
+
+.history{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20rem;
+
+}
+
+.history h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.history img{
+    width: 25rem;
+    margin-right: 2rem;
+    border-radius: 100px 230px 300px 100px;
+}
+
+/* slider */
+.kol-one {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.kol {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.pol h2{
+    /* margin: 2px 2%; */
+    font-size: 15px;
+}
+
+.pol img{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.pol img:hover {
+    transform: scale(0.8);
+    transition: all 0.55s ease-in-out;
+}
+
+.pol-one {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.pol-one h2{
+    margin: 2px 2%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.pol-one img{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.pol-one img:hover {
+    transform: scale(0.8);
+    transition: all 0.55s ease-in-out;
+}
