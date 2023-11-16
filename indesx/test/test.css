@@ -314,12 +314,13 @@ body{
 }
 
 .footer{
+    background-color: #0808081d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 60vh;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .footer-info{
