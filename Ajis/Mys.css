@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(red, green, blue);
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+/* Navbar && Header START*/
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: salmon ;
+    padding: 20px 5%;
+    /* min-height: 8vh; */
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo a{
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+
+.logo a:hover {
+    border-bottom: 2px solid red;
+}
+
+.topnav {
+    display: flex;
+}
+
+.topnav a {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 60px;
+    text-transform: uppercase;
+    border-bottom: 2px solid  transparent;
+    transition: all .55s ease;
+    /* background: transparent; */
+}
+
+.topnav a:hover {
+    border-bottom: 2px solid red;
+}
+
+#menu-icon {
+    color: black;
+    font-size: 35px;
+    z-index: 999999;
+    cursor: pointer;
+}
+/* Navbar && Header END*/
+
+/* background home START */
+.container-one {
+    background-image: url(https://www.masakapahariini.com/wp-content/uploads/2020/02/kumpulan-resep-nasi-goreng.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.konten-one{
+    width: 80%;
+    margin: auto;
+}
+
+.img-one {
+    width: 50%;
+    height: 30vh;
+}
+
+.konten-one .title {
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    background-color: #ffffff65;
+    color: black;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+/* ABOUT WARBIR */
+.container-two {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5%; */
+    padding-top: 5rem;
+    margin: auto;
+    height: 100vh;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.about .dekripsi-about{
+    width: 100%;
+    line-height: 2.5rem;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.about .img-about {
+    width: 100%;
+}
+
+.maps iframe{
+    border-radius: 10%;
+}
+
+.about .img-about img{
+    width: 90%;
+    border-radius: 50%;
+}
+/* END */
+
+/* MENU */
+    .container-tree{
+        background-image: url(https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=1380&t=st=1700302658~exp=1700303258~hmac=aad9c7969cbecb60be4acc58c2a45042600e92d8db3e1515fee82b1792a08225);
+        background-size: cover;
+        background-position: center;
+        height: 100vh
+    }
+    .menu {
+        width: 80%;
+        margin: auto;
+    }
+    .deksripsi-menu h3, .deksripsi-menu p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: capitalize;
+        line-height: 4rem;
+        color: rgb(0, 0, 0);
+    }
+    .img-menuu {
+        display: flex;
+        justify-content: space-around;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+    .img-menuu p {
+        font-size: 40px;
+    }
+    .img-menuu img{
+        border-radius: 20%;
+        font-size: 40px;
+    }
+    .img-menuu img:hover{
+        transform: scale(0.9);
+        transition: all 0.55 ease;
+    }
+/* END */
+    footer {
+        background-image: url(https://img.freepik.com/free-photo/grunge-dark-interior-with-smoky-atmosphere_1048-11822.jpg?w=826&t=st=1700306648~exp=1700307248~hmac=a93569cf83d227cc64517a7ee478b4b0aead2fdb5c71abaa55505b30076cfc7d);  
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    .medsos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        line-height: 2rem;
+        height: 50vh;
+    }
+    .icon #fb,
+    .icon #tw {
+       font-size: 40px;
+       gap: 10px;
+       color: blue;
+    }
+    .icon #wa {
+        color: green;
+        font-size: 40px;
+    }
+    .icon #ig {
+        color: brown;
+        font-size: 40px;
+    }
+    .form label{
+        display: block;
+        padding: 10px;
+    }
+    .form input{
+        padding: 0.2rem;
+        color: red;
+    }
+
+    .medsos-teks{
+        font-size: 15px;
+    }
+    
+    .credit,
+    .credit h4,
+    .credit p {
+        width: 25%;
+        margin: auto;
+        padding: 10px;
+        border-top: 5px solid red;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* END */
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+    
+    #menu {
+        display: inline-block;
+    }
+    .navbar {
+        padding: 10px 2%;
+    }
+    .topnav {
+        position: fixed;
+        width: 20rem;
+        height: 100%;
+        top: 3.5rem;
+        right: -100%;
+        background-color: beige;
+        overflow: hidden;
+        display: block;
+    }
+    .navbar .topnav.active{
+        right: 0;
+        transition: 1s;
+    }
+    .topnav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem;
+        line-height: 5rem;
+        font-size: large;
+        border-bottom: 2px solid lightcyan transparent;
+    }
+    .navbar .navbar-top a:hover{
+        color: green;
+        font-size: 1.6rem;
+    }
+
+    .about {
+        flex-wrap: wrap;
+        font-size: 15px;
+        background-image: url(https://media.tenor.com/olAvaHoXvIEAAAAC/elyswisnoto-omurice.gif);
+        background-size: cover;
+        background-position: top;
+
+    }
+    .about img{
+        display: none;
+    }
+
+    .img-menuu,
+    .img-menuu p,
+    .img-menuu img  {
+        flex-wrap: wrap;
+    }
+
+    .img-menuu p{
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .img-menuu img{
+        border-radius: 10%;
+    }
+    .medsos {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
