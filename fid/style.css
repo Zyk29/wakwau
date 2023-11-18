@@ -1,0 +1,344 @@
+* {
+    font-family: Times New Roman, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+    list-style: none;
+    }
+ html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+ }
+ body {
+    margin: 0px;
+    padding: 0px;
+ }
+ .video {
+    width: 100%;
+ }
+ .layar-depan {
+    width: 1000px;
+    margin: auto;
+ }
+ .navbar {
+    position: fixed;
+    z-index: 100;
+    color: rgb(88, 134, 173);
+    text-align: center;
+    border-bottom: 1px solid rgb(129, 77, 77);
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .navbar .putih {
+    background-color: cadetblue;
+ }
+ .navbar .logo {
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+ }
+ .navbar .logo img {
+    width: 100px;
+ }
+ .navbar .navbar-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+ }
+ .navbar .navbar-nav ul li {
+    list-style-type: none;
+    line-height: 60px;
+    font-size: 25px;
+ }
+.navbar li a {
+    color: aliceblue;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+ }
+ .navbar ul li a:hover {
+    text-decoration: underline;
+    background-color: rgb(212, 212, 226);
+ }
+ #menu-icon {
+   font-size: 40px;
+   color: black;
+   cursor: pointer;
+   display: none;
+ }
+
+ #clock {
+   font-size: 50px;
+   text-align: center;
+   display: none;
+ }
+
+ /* /pengaturan header/ */
+ header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+ }
+ header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+ }
+ header .perkenalan {
+    z-index: 100;
+    color: thistle;
+    text-align: center;
+    position: relative;
+    top: 50%;
+ }
+ header .perkenalan h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+ }
+ .tombol {
+    background-color: rgb(136, 82, 82);
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+ }
+ header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(130, 163, 134);
+    opacity: 50%;
+    z-index: -1;
+ }
+ .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+ }
+ section {
+    padding: 50px 0px 50px 0px;
+ }
+ section h3 {
+    font-size: 30px;
+ }
+ section h3::after {
+    content: "";
+    border-bottom: 5px solid bisque;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+ }
+#about
+#galery
+#registration {
+    text-align: center;
+}
+section .isi p {
+    font-style: normal;
+    text-align: justify;
+}
+nav.putih {
+    background-color: cadetblue;
+ }
+ nav.putih .tombol-menu {
+    background-color: rgb(166, 186, 204);
+ }
+ nav.putih ul li a {
+    color: rgb(151, 109, 109);
+ }
+ nav .logo img.hitam {
+    display: none;
+ }
+ section.pink {
+    background-color: rgb(192, 214, 255);
+ }
+ section#galery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding:0rem 10px 10px 0px;
+    gap: 10px;
+    height: 100vh;
+ }
+ section#galery div {
+    padding: 10px;
+ }
+ section#galery div img {
+    height: 300px;
+    border-radius: 5px;
+ }
+ section#galery div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+ }
+ form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(48, 101, 182);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black(0, 0, 0, 0.2);
+ }
+ label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ input[type="kelas"],
+ input[type="pesan"] {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 5px;
+ }
+
+input [type="submit"]{
+    background-color: antiquewhite;
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: rgb(128, 128, 187);
+}
+
+.read-more-link {
+    color: darkcyan;
+    text-decoration: none;
+}
+ .read-more-link:hover {
+    text-decoration: underline;
+ }
+
+ footer {
+   padding: 20px 0px 50px 0px;
+   background-color: palevioletred;
+   color: rgb(95, 143, 185);
+}
+
+.layar-depan-one{
+   width: 60%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+footer .layar-depan div {
+  width: 20%;
+}
+
+footer .layar-depan h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .layar-depan .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgb(165, 165, 214);
+  text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+   .layar-depan {
+      width: 100%;
+   }
+   #menu-icon{
+      display: block;
+   }
+
+   .navbar-nav {
+      display: block;
+   }
+
+   .navbar-nav {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      top: 100px;
+      right: -100%;
+      background: #2c3e50a1;
+      text-align: center;
+      transition: right 0.5s ease;
+    }
+    
+   .navbar .navbar-nav.active {
+      right: 0;
+      transition: 1s;
+    }
+    
+    .navbar .navbar-nav ul{
+      display: block;
+      gap: 4px;
+      
+    }
+   nav .navbar-nav a {
+      display: block;
+      margin: 5rem;
+      font-size: 20px;
+      line-height: 15px;
+      border-bottom: 1px solid red transparent;
+   }
+    
+    nav .navbar-nav a:hover{
+      color: red;
+      font-size: 1.6rem;
+    }
+
+    #clock {
+      display: inline-block;
+      color: red;
+      height: 20vh;
+    }
+
+   .isi {
+      text-align: center;
+   }
+
+   .pink {
+      flex-wrap: wrap;
+      gap: 0;
+   }
+   .pink img{
+      width: 100%;
+   }
+
+   .layar-depan-one{
+      flex-wrap: wrap;
+      display: block;
+      margin: auto;
+   }
+   .layar-depan-one {
+      flex-wrap: wrap;
+   }
+}

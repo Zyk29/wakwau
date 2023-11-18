@@ -1,0 +1,132 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaduanSvara79</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Link ICON -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="images/icon" href="images/logo.png">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJUSyEx1q6GSYG"></script>
+</head>
+<body>
+    <!--Navbar Start-->
+<nav class="navbar">
+    <div class="logo">
+        <a href=""><img src="images/logo-removebg-preview.png" class="putih"/></a>
+    </div>
+    <div class="navbar-nav" id="navbar-nav">
+        <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#galery">Galery</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#contact">Contact Person</a></li>
+        <div id="clock"></div>
+        </ul>
+    </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+</nav>
+    <!--Navbar End-->
+<div class="video">
+    <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4"/>
+        </video>
+        <div class="perkenalan">
+            <h3>PaduanSvara79
+                <p>
+                    ini adalah website dari PaduanSvara79, Check It Out!
+                </p>
+            </h3>
+            <p>
+                <a href="" class="tombol">Info Selengkapnya</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="layar-depan">
+                <h3>About Us</h3>
+                <div class="isi">
+                    <p>PaduanSvara79 adalah ekstrakurikuler dari SMAN 79  yang berdiri sejak tahun 2017. PaduanSvara79  merupakan ekstrakulikuler yang bergerak di bidang seni suara. PaduanSvara79 sering mengisi berbagai event yang diadakan oleh SMAN 79 Jakarta dan menampilkan penampilan terbaiknya di acara-acara luar sekolah. Setiap tahunnya PaduanSvara79 juga berpartisipasi dalam berbagai lomba.<a href="https://www.instagram.com/osismpk79/" class="read-more-link">Baca Selengkapnya</a></p>
+                    <br>
+                    <p>PaduanSvara79 memiliki visi Menjadikan Ekstrakurikuler Paduan Suara sebagai wadah bagi siswa/siswi SMAN 79 untuk menyalurkan dan mengembangkan minat bakat dan prestasi dalam paduan suara serta meningkatkan ketaqwaan kepada Tuhan Yang Maha Esa. Dan misi nya adalah Meningkatkan prestasi Paduan Suara SMAN 79 Jakarta</p>
+                </div>
+            </div>
+        </section>
+        <section class="pink" id="galery">
+        <div><img src="images/padus1.jpeg"></div>
+        <div><img src="images/padus2.jpeg"></div>
+        <div><img src="images/padus3.jpeg"></div>
+        </section>
+        <section id="daftar">
+        <div class="layar-depan">
+            <h3>Pendaftaran</h3>
+            <form action="Proses_pendaftaran.php" method="post">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="kelas">Kelas</label>
+                <input type="kelas" id="kelas" name="kelas">
+
+                <input type="submit" value="Daftar">
+            </form>
+    </main>
+    <footer id="contact" class="contact">
+        <div class="layar-dpg">
+        <div class="layar-depan-one">
+            <div>
+                <h5>Contact Person</h5>
+                <p>Instagram : @osismpk79</p>
+                <p>Nomor Telfon : 0836389558</p>
+                <p>Email : flayyina1@gmail.com</p>
+            </div>
+            <div class="form">
+                <div class="kontak"></div>
+                <h5>Send Us Message</h5>
+                <form action="Proses_pendaftaran.php" method="post">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+    
+                    <label for="kelas">Kelas</label>
+                    <input type="kelas" id="kelas" name="kelas">
+
+                    <label for="pesan">Pesan</label>
+                    <input type="pesan" id="pesan" name="pesan">
+    
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+            <div>
+                <h5>Location</h5>
+                <p>JL. Menteng Pulo Ujung, <br> Menteng Atas, Kec.Setia Budi, <br>Jakarta Selatan, 12960</p>
+            </div>
+        </div>
+        </div>
+        <div class="layar-dpn">
+            <div class="layar-depan">
+                <div class="copyright">
+                  &copy: 2021 PaduanSvara79
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="script1.js"></script>
+</body>
+</html>
+</html>
