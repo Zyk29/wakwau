@@ -359,7 +359,6 @@ body {
     }
     .container-two{
         height: 350vh;
-        border: 1px solid red;
     }
     .about {
         flex-wrap: wrap;

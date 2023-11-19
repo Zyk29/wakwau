@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(red, green, blue);
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+/* Navbar && Header START*/
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: salmon ;
+    padding: 20px 5%;
+    /* min-height: 8vh; */
+    width: 100%;
+    z-index: 1;
+}
+
+.logo a{
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+
+.logo a:hover {
+    border-bottom: 2px solid red;
+}
+
+.topnav {
+    display: flex;
+}
+
+.topnav a {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 60px;
+    text-transform: uppercase;
+    border-bottom: 2px solid  transparent;
+    transition: all .55s ease;
+    /* background: transparent; */
+}
+
+.topnav a:hover {
+    border-bottom: 2px solid red;
+}
+
+#menu-icon {
+    color: black;
+    font-size: 35px;
+    z-index: 999999;
+    cursor: pointer;
+}
+/* Navbar && Header END*/
+
+/* Daftar Menu */
+    .dame{
+        background-color: antiquewhite;
+        height: 150vh;
+        border: 1px solid red;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+        gap: 5em;
+        flex-wrap: wrap;
+    }
+    .tittle-menuo {
+        height: 10vh;
+    }
+    .tittle-menuo h1{
+        text-align: center;
+        margin: 5rem auto;
+    }
+/* END */
+
+/* GOOTER */
+    footer {
+        background-image: url(https://img.freepik.com/free-photo/grunge-dark-interior-with-smoky-atmosphere_1048-11822.jpg?w=826&t=st=1700306648~exp=1700307248~hmac=a93569cf83d227cc64517a7ee478b4b0aead2fdb5c71abaa55505b30076cfc7d);  
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    .medsos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        line-height: 2rem;
+        height: 50vh;
+    }
+    .icon #fb,
+    .icon #tw {
+       font-size: 40px;
+       gap: 10px;
+       color: blue;
+    }
+    .icon #wa {
+        color: green;
+        font-size: 40px;
+    }
+    .icon #ig {
+        color: brown;
+        font-size: 40px;
+    }
+    .form label{
+        display: block;
+        padding: 10px;
+    }
+    .form input{
+        padding: 0.2rem;
+        color: red;
+    }
+    .medsos-teks{
+        font-size: 15px;
+    }
+    .credit,
+    .credit h4,
+    .credit p {
+        width: 25%;
+        margin: auto;
+        padding: 10px;
+        border-top: 5px solid red;
+        text-align: center;
+        font-size: 25px;
+    }
+    .maps iframe{
+        border-radius: 10%;
+    }
+
+    /* END */
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .navbar {
+        padding: 10px 2%;
+    }
+    .topnav {
+        position: fixed;
+        width: 20rem;
+        height: 100%;
+        top: 3.5rem;
+        right: -100%;
+        background-color: beige;
+        overflow: hidden;
+        display: block;
+    }
+    .navbar .topnav.active{
+        right: 0;
+        transition: 1s;
+    }
+    .topnav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem;
+        line-height: 5rem;
+        font-size: large;
+        border-bottom: 2px solid lightcyan transparent;
+    }
+    .navbar .navbar-top a:hover{
+        color: green;
+        font-size: 1.6rem;
+    }
+
+    .dame {
+        height: 400vh;
+    }
+    .container{
+        margin-left: 5rem;
+    }
+    .medsos {
+        flex-direction: column;
+        height: 65vh;
+    }
+    /* YT */
+    .sinematik {
+        width: 80%;
+    }
+    /* END */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .container-two{
+        height: 350vh;
+    }
+    .about {
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mys.css">
+    <!-- Link Icon BoxIcon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link GOGGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="#">BangBir</a>
+            </div>
+            <div class="topnav" id="#topnav">
+                <a href="MysPet.html">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Contact</a>
+                <a href="warbir2.html">Store</a>    
+                <a href="ajis.html">Sign In</a>
+            </div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </nav>
+    </header>
+    <main class="dame">
+        <div class="tittle-menuo">
+            <h1>Daftar Menu WarBir</h1>
+        </div>
+        <div class="container">
+                <div class="tittle-menu">
+                    <h1>Olahan Nasi & Mie</h1>
+                </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/nasgor1.jpeg" alt="">
+                    <h4>Nasi Goreng</h4>
+                    <p>Rp. 15.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/miegoreng (2).webp" alt="">
+                    <h4>Mie Goreng</h4>
+                    <p>Rp. 15.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/kwetiaw.jpeg" alt="">
+                    <h4>Kwetiaw</h4>
+                    <p>Rp. 15.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="tittle-menu">
+                <h1>Olahan Daging</h1>
+            </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/tongseng sapi.jpeg" alt="">
+                    <h4>Tongseng Sapi</h4>
+                    <p>Rp. 25.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/tongseng kambing.jpeg" alt="">
+                    <h4>Tongseng kambing</h4>
+                    <p>Rp. 25.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="img-menuu">
+                <div class="img-menu1">
+                    <img src="img/tengkleng.jpg" alt="">
+                    <h4>Tongseng Campur</h4>
+                    <p>Rp. 25.000</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="medsos">
+            <div class="ig-wa-twiter">
+                <div class="icon">
+                    <a href="https://instagram.com/aziznmyr?igshid=OGQ5ZDc2ODk2ZA=="><div class="bx bxl-instagram" id="ig"></div></a>
+                    <a href="https://instagram.com/aziznmyr?igshid=OGQ5ZDc2ODk2ZA=="><div class="bx bxl-facebook" id="fb"></div></a>
+                    <a href="https://instagram.com/aziznmyr?igshid=OGQ5ZDc2ODk2ZA=="><div class="bx bxl-twitter" id="tw"></div></a>
+                    <a href="https://instagram.com/aziznmyr?igshid=OGQ5ZDc2ODk2ZA=="><div class="bx bxl-whatsapp" id="wa"></div></a>
+                </div>
+                <div class="medsos-teks">
+                    <h4>Our Media Sosial</h4>
+                </div>
+            </div>
+            <div class="medsos-teks">
+                <div class="jasa">
+                    <h4>Open Jasa Borongan Silahkan Hubungi</h4>
+                    <p>081298347822 (Aziz Nail Muyassar)</p>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <label for="email">Masukan Email</label>
+                        <input type="email" id="email" name="email">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.3108451906737!2d106.7333869749914!3d-6.353790793636127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjEnMTMuNyJTIDEwNsKwNDQnMDkuNSJF!5e0!3m2!1sen!2sid!4v1700351743779!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="credit">
+            <h5>Created By Aziz Nail Muyasar  ©2023</h5>
+        </div>
+    </footer>
+    <script src="ajis.js"></script>
+</body>
+</html>
