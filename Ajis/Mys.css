@@ -358,10 +358,17 @@ body {
         width: 100%;
     }
     .container-two{
-        height: 350vh;
+        height: 500vh;
     }
     .about {
         flex-wrap: wrap;
         font-size: 15px;
+    }
+    .mision {
+        display: none;
+        padding: 0;
+    }
+    .service {
+        height: 100vh;
     }
 }
